@@ -1,0 +1,85 @@
+/* Intro screen styles */
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#intro {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Game styles */
+#game {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  border: 2px solid white;
+  background-color: #222;
+}
+
+#scoreboard {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.paddle {
+  position: absolute;
+  width: 10px;
+  height: 80px;
+  background-color: white;
+}
+
+#paddle-left {
+  left: 0;
+  top: 160px;
+}
+
+#paddle-right {
+  right: 0;
+  top: 160px;
+}
+
+#ball {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  top: 192.5px;
+  left: 392.5px;
+}
+
+#winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: yellow;
+}

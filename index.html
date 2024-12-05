@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ping - Pong Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="intro">
+    <h1>Welcome to "ping Pong Game"</h1>
+    <p>Choose a mode to start:</p>
+    <button id="player-vs-player">Player vs. Player</button>
+    <button id="player-vs-computer">Player vs. Computer</button>
+    <h2>made by "Anuj Yadav"</h2>
+  </div>
+
+  <div id="game" style="display: none;">
+    <div id="scoreboard">
+      <span id="player-score">0</span> : <span id="computer-score">0</span>
+    </div>
+    <div id="paddle-left" class="paddle"></div>
+    <div id="paddle-right" class="paddle"></div>
+    <div id="ball"></div>
+    <div id="winner" style="display: none;">Player Wins!margin-top:140px;</div>
+    <button id="restart" style="display: none;margin-left:350px;margin-top:100px;" onclick="restartGame()">Restart</margin-left:350></button>
+    <button id="home"style="display:none; margin-left:350px;margin-top:10px; ;"onclick="home()">Home</button>
+  </div>
+<div></div>
+  <script src="script.js"></script>
+</body>
+</html>
